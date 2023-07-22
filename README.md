@@ -2,7 +2,7 @@
 Automatic1111 extension that allows embedding Javascript into prompts.
 
 Javascript
-You can write Javascript now to your heart's content!
+You can write Javascript now to your heart's content! Examples of how this works at the end.
 
 ## Motivation
 
