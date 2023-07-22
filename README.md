@@ -57,6 +57,8 @@ If you disable it, code blocks will appear in your output, and it costs virtuall
 
 ## Examples
 
+Using screenshots is cheap and easy, but not very accessible and may have other problems. If this causes you any kind of difficulty let me know, I will make changes.
+
 ### Basics
 
 ![](assets/example_basic/command.png)
