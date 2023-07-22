@@ -82,7 +82,6 @@ Date
 ![](assets/example_date/command.png)
 
 ![](assets/example_date/result.png)
-
 and,
 
 Console
