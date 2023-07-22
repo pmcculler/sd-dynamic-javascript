@@ -62,11 +62,13 @@ Using screenshots is cheap and easy, but not very accessible and may have other 
 ### Basics
 
 ![](assets/example_basic/command.png)
+
 ![](assets/example_basic/result.png)
 
 You don't need to separate this into separate lines like I did.
 
 ![](assets/example_no_braces/command.png)
+
 ![](assets/example_no_braces/result.png)
 
 I just like the braces :shrug:
@@ -78,11 +80,13 @@ Stuff like Date() and the console are indeed available.
 Date
 
 ![](assets/example_date/command.png)
+
 ![](assets/example_date/result.png)
 
 Console
 
 ![](assets/example_console_log/command.png)
+
 ![](assets/example_console_log/result.png)
 
 ### Context
@@ -90,10 +94,13 @@ Console
 Within a particular generation, variables in one code block can be used by subsequent (later) code blocks.
 
 ![](assets/example_shared_context_in_prompt/command.png)
+
 ![](assets/example_shared_context_in_prompt/result.png)
 
 This works from the positive prompt to the negative too.
+
 ![](assets/example_shared_context_across_prompts/command.png)
+
 ![](assets/example_shared_context_across_prompts/result.png)
 
 ### Dynamic Prompts
