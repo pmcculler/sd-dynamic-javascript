@@ -41,6 +41,7 @@ It's Javascript, executes as if in a browser. I don't know how crazy you can get
 * Positive prompts are evaluated first, then negative prompts.
 * Evaluation in each prompt is done in one pass from beginning to end.
 * Context for variables is shared among embeddings and between positive and negative prompts (though because of order of exaluation, as mentioned above, it's one-way.)
+* Context is cleared between generations. If you expected or need something else, let me know.
 * Syntax and other errors will be sent to the console and the prompt.
 * *  e.g. Message: javascript error: Unexpected identifier 'able' (Session info: headless chrome=114.0.5735.248) 
 * * *    Stacktrace: Backtrace: GetHandleVerifier [0x00F5A813+48355] (No symbol)
