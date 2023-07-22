@@ -65,13 +65,13 @@ Using screenshots is cheap and easy, but not very accessible and may have other 
 
 ![](assets/example_basic/result.png)
 
-You don't need to separate this into separate lines like I did.
+You don't need to separate this into separate lines and use braces like I did.
 
 ![](assets/example_no_braces/command.png)
 
 ![](assets/example_no_braces/result.png)
 
-I just like the braces :shrug:
+I just like the braces and such :shrug:
 
 ### Javascript Functions
 
