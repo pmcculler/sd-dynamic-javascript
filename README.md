@@ -103,6 +103,8 @@ This works from the positive prompt to the negative too.
 
 ![](assets/example_shared_context_across_prompts/result.png)
 
+...but only in the positive->negative direction, because that's the order of evaluation. If you need something else, I guess OOE could be a setting? Let me know.
+
 ### Dynamic Prompts
 
 Since this extension runs before Dynamic Prompts, any dynamic prompting you create will work as you might hope.
