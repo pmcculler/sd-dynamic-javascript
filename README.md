@@ -12,11 +12,12 @@ You can write Javascript now to your heart's content!
 ## State: Current Problems and TODOs
 * None. Unlike everything else in life, this is problem free.
 * Except... it might be something of a security issue to run arbitrary Javascript inside your prompt. Just saying.
+* And you do have to install something on the side, see Requirements just below. Hey, they say nothing free is worthwhile.
 
 ## Requirements
 
-This extension uses selenium and requires that you have a browser driver in your path, I recommend <a href="https://chromedriver.chromium.org/downloads">chromedriver</a>.) As far as I know you really need this, and you have to do it separately from just installing the extension. Sorry. If you know a better way to execute Javascript in an embedded context like this, please let me know.
-Selenium itself the extension should take care of.
+This extension uses selenium and requires that you have a browser driver in your path, I recommend <a href="https://chromedriver.chromium.org/downloads">chromedriver</a> (Mac, Linux, Windows all supported; if you're using, like, BeOS - well, let me know.) As far as I know you really need this, and you have to do it separately from just installing the extension. Sorry. If you know a better way to execute Javascript in an embedded context like this, please let me know.
+The extension should take care of installing selenium itself, let me know if you encounter a problem with how that works.
 
 ## Capabilities
 
