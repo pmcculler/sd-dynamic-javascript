@@ -25,26 +25,26 @@ It's Javascript, executes as if in a browser. I don't know how crazy you can get
 ## Interation with Other Extension such as Dynamic Prompts
 
 ####Dynamic Prompts
-*That magnificent extension does its own thing and as far as I can tell there is no adverse interaction between this extension and that one.
-*Dynamic Javascript prompts runs before Dynamic Prompts, so you can create dynamic prompt material with Javascript. The opposite is not true, but something I am consider. Let me know if you have a use for also being able to execute dynamic javascript _after_ dynamic prompts.
+* That magnificent extension does its own thing and as far as I can tell there is no adverse interaction between this extension and that one.
+* Dynamic Javascript prompts runs before Dynamic Prompts, so you can create dynamic prompt material with Javascript. The opposite is not true, but something I am consider. Let me know if you have a use for also being able to execute dynamic javascript _after_ dynamic prompts.
 
 ####Lua
-*I haven't tried using it in combination with the Lua extension yet but it's on the list. I think it will work without issue.
+* I haven't tried using it in combination with the Lua extension yet but it's on the list. I think it will work without issue.
 
 ## Code, Evaluation, and Order of Evaluation
 
-*Dynamic Javascript prompts runs before Dynamic Prompts, so you can create dynamic prompt material with Javascript.
-*Code blocks are demarcated by '%%' at the beginning and end. - if that doesn't work for you let me know.
+* Dynamic Javascript prompts runs before Dynamic Prompts, so you can create dynamic prompt material with Javascript.
+* Code blocks are demarcated by '%%' at the beginning and end. - if that doesn't work for you let me know.
 **  e.g. %% console.log(hello world); %%
-*Whatever your Javascript returns is what the code block is replaced with. If you return nothing, the code is evaluated but only empty space replaces the code block in the prompt.
-*Positive prompts are evaluated first, then negative prompts.
-*Evaluation in each prompt is done in one pass from beginning to end.
-*Context for variables is shared among embeddings and between positive and negative prompts (though because of order of exaluation, as mentioned above, it's one-way.)
-*Syntax and other errors will be sent to the console and the prompt.
+* Whatever your Javascript returns is what the code block is replaced with. If you return nothing, the code is evaluated but only empty space replaces the code block in the prompt.
+* Positive prompts are evaluated first, then negative prompts.
+* Evaluation in each prompt is done in one pass from beginning to end.
+* Context for variables is shared among embeddings and between positive and negative prompts (though because of order of exaluation, as mentioned above, it's one-way.)
+* Syntax and other errors will be sent to the console and the prompt.
 **  e.g. Message: javascript error: Unexpected identifier 'able' (Session info: headless chrome=114.0.5735.248) 
 ***    Stacktrace: Backtrace: GetHandleVerifier [0x00F5A813+48355] (No symbol)
 ***    ...
-*It does cost a bit to run this every time, not too much, and I haven't measured it, data and anecdotes welcomed.
+* It does cost a bit to run this every time, not too much, and I haven't measured it, data and anecdotes welcomed.
 
 ## Settings
 
