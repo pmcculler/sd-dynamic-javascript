@@ -113,4 +113,6 @@ Since this extension runs before Dynamic Prompts, any dynamic prompting you crea
 ![](assets/example_interaction_with_dyamic_prompts/command.png)
 ![](assets/example_interaction_with_dyamic_prompts/result.png)
 
-Contact me with questions and comments, but not threats, please. And feel free to contribute.
+## Colophon
+
+Made for fun. Contact me with questions and comments, but not threats, please. And feel free to contribute.
