@@ -25,11 +25,11 @@ It's Javascript, executes as if in a browser. I don't know how crazy you can get
 
 ## Interation with Other Extension such as Dynamic Prompts
 
-####Dynamic Prompts
+#### Dynamic Prompts
 * That magnificent extension does its own thing and as far as I can tell there is no adverse interaction between this extension and that one.
 * Dynamic Javascript prompts runs before Dynamic Prompts, so you can create dynamic prompt material with Javascript. The opposite is not true, but something I am considering. Let me know if you have a use for also being able to execute dynamic javascript _after_ dynamic prompts.
 
-####Lua
+#### Lua
 * I haven't tried using it in combination with the Lua extension yet but it's on the list. I think it will work without issue.
 
 ## Code, Evaluation, and Order of Evaluation
