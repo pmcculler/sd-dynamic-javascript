@@ -6,8 +6,8 @@ You can write Javascript now to your heart's content!
 
 ## Motivation
 
-1. Currently you can't embed Javascript in your SD prompts, which is just silly.
-2. That's sufficent, I think.
+* Currently you can't embed Javascript in your SD prompts, which is just silly.
+* That's sufficent, I think.
 
 ## State: Current Problems and TODOs
 * None. Unlike everything else in life, this is problem free.
@@ -35,15 +35,15 @@ It's Javascript, executes as if in a browser. I don't know how crazy you can get
 
 * Dynamic Javascript prompts runs before Dynamic Prompts, so you can create dynamic prompt material with Javascript.
 * Code blocks are demarcated by '%%' at the beginning and end. - if that doesn't work for you let me know.
-**  e.g. %% console.log(hello world); %%
+* *  e.g. %% console.log(hello world); %%
 * Whatever your Javascript returns is what the code block is replaced with. If you return nothing, the code is evaluated but only empty space replaces the code block in the prompt.
 * Positive prompts are evaluated first, then negative prompts.
 * Evaluation in each prompt is done in one pass from beginning to end.
 * Context for variables is shared among embeddings and between positive and negative prompts (though because of order of exaluation, as mentioned above, it's one-way.)
 * Syntax and other errors will be sent to the console and the prompt.
-**  e.g. Message: javascript error: Unexpected identifier 'able' (Session info: headless chrome=114.0.5735.248) 
-***    Stacktrace: Backtrace: GetHandleVerifier [0x00F5A813+48355] (No symbol)
-***    ...
+* *  e.g. Message: javascript error: Unexpected identifier 'able' (Session info: headless chrome=114.0.5735.248) 
+* * *    Stacktrace: Backtrace: GetHandleVerifier [0x00F5A813+48355] (No symbol)
+* * *    ...
 * It does cost a bit to run this every time, not too much, and I haven't measured it, data and anecdotes welcomed.
 
 ## Settings
