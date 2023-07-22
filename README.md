@@ -76,10 +76,12 @@ I just like the braces :shrug:
 Stuff like Date() and the console are indeed available.
 
 Date
+
 ![](assets/example_date/command.png)
 ![](assets/example_date/result.png)
 
 Console
+
 ![](assets/example_console_log/command.png)
 ![](assets/example_console_log/result.png)
 
