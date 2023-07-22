@@ -83,6 +83,8 @@ Date
 
 ![](assets/example_date/result.png)
 
+and,
+
 Console
 
 ![](assets/example_console_log/command.png)
