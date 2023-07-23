@@ -70,7 +70,7 @@ Using screenshots is cheap and easy, but not very accessible and may have other 
 
 Begets:
 
-```javascript
+```
 the code block value in the prompt becomes what's in quotes
 ```
 
@@ -82,7 +82,7 @@ You don't need to separate this into separate lines and use braces like I did.
 
 Begets:
 
-```javascript
+```
 the code block value in the prompt becomes what's in quotes
 ```
 
