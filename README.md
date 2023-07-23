@@ -62,15 +62,29 @@ Using screenshots is cheap and easy, but not very accessible and may have other 
 
 ### Basics
 
-![](assets/example_basic/command.png)
+```javascript
+%% {
+  return "the code block value in the prompt becomes what's in quotes";
+} %%
+```
 
-![](assets/example_basic/result.png)
+Begets:
+
+```javascript
+the code block value in the prompt becomes what's in quotes
+```
 
 You don't need to separate this into separate lines and use braces like I did.
 
-![](assets/example_no_braces/command.png)
+```javascript
+%% return "the code block value in the prompt becomes what's in quotes"; %%
+```
 
-![](assets/example_no_braces/result.png)
+Begets:
+
+```javascript
+the code block value in the prompt becomes what's in quotes
+```
 
 I just like the braces and such :shrug:
 
