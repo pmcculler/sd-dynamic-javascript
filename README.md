@@ -7,7 +7,8 @@ You can write Javascript now to your heart's content! Examples of how this works
 ## Motivation
 
 * Currently you can't embed Javascript in your SD prompts, which is just silly.
-* That's sufficent, I think.
+* That's sufficent, I think. I can't wait to see what amazing things people come up with. Please share them with me, and others, if you pease.
+* There are interfaces for programming with python (via --allow-code and the script dropdown) or with lua (via a different extension) but these fine methods allow you to program the *process* of generating images. Literally there's an 'image.process(512, 512, "a dog playing by the seashore")' kind of API. This extension does not give you the power to program the process or Automatic1111 itself; those do. This extension focuses on embedding & executing Javascript directly in prompts. Whether that is more useful is up to you.
 
 ## State: Current Problems and TODOs
 * None. Unlike everything else in life, this is problem free.
@@ -30,11 +31,15 @@ It's Javascript, executes as if in a browser. I don't know how crazy you can get
 * Dynamic Javascript prompts runs before Dynamic Prompts, so you can create dynamic prompt material with Javascript. The opposite is not true, but something I am considering. Let me know if you have a use for also being able to execute dynamic javascript _after_ dynamic prompts.
 
 #### Lua
-* I haven't tried using it in combination with the Lua extension yet but it's on the list. I think it will work without issue.
+* This extension currently does not work with the Lua extension, probably because the Lua extension has its own prompt box. If there is demand, I will look into supporting this.
+
+#### Custom Code Python Script "--allow-code" 
+* This integration works just fine today.
 
 ## Code, Evaluation, and Order of Evaluation
 
 * Dynamic Javascript prompts runs before Dynamic Prompts, so you can create dynamic prompt material with Javascript.
+*  * But you can't include Javascript from a file with Dynamic Prompts, for example, because that Javascript won't get evaluated. LMK if you need that though.
 * Code blocks are demarcated by '%%' at the beginning and end. - if that doesn't work for you let me know.
 * *  e.g. %% console.log(hello world); %%
 * Whatever your Javascript returns is what the code block is replaced with. If you return nothing, the code is evaluated but only empty space replaces the code block in the prompt. If you're disappointed by this let me know.
@@ -94,9 +99,15 @@ Stuff like Date() and the console are indeed available.
 
 Date
 
-![](assets/example_date/command.png)
+```javascript
+%% {
+ return Date();
+} %%
+```
 
 ![](assets/example_date/resault.png)
+
+Bit of a tangent: the results you get when you use just a date as the prompt are curious.
 
 Console
 
@@ -122,11 +133,16 @@ This works from the positive prompt to the negative too.
 
 ### Dynamic Prompts
 
-Since this extension runs before Dynamic Prompts, any dynamic prompting you create will work as you might hope.
+Since this extension runs before Dynamic Prompts, any dynamic prompting you create will work as you might hope. If you need it to run *after*... well, leave a note about that and describe your scenario, please.
 
 ![](assets/example_interaction_with_dyamic_prompts/command.png)
+
 ![](assets/example_interaction_with_dyamic_prompts/result.png)
 
 ## Colophon
 
-Made for fun. Contact me with questions and comments, but not threats, please. And feel free to contribute.
+Made for fun. I hope if brings you great joy, and perfect hair forever. Contact me with questions and comments, but not threats, please. And feel free to contribute! Pull requests and ideas in Discussions or Issues will be taken quite seriously!
+
+A dog playing by the seashore thanks you for your time.
+
+![](assets/dog.png)
