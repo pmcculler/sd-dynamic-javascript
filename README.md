@@ -131,6 +131,50 @@ This works from the positive prompt to the negative too.
 
 ...but only in the positive->negative direction, because that's the order of evaluation. If you need something else, I guess OOE could be a setting? Let me know.
 
+
+### A little more complicated
+
+```javascript
+%%
+function randomInt(min, max) { // min inclusive, max exclusive
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+function randomWord() {
+  randomWord = "";
+  length = randomInt(6,11);
+  for (i = 0; i < length; i++) {
+    char = 'abcdefghijklmnopqrstuvwxyz1234567890'.charAt([randomInt(0,36)])
+    randomWord = randomWord.concat(char);
+  }
+  console.log(randomWord);
+  return randomWord;
+}
+
+function randomNumber() {
+  randomNumber = "";
+  length = randomInt(6,11);
+  for (i = 0; i < length; i++) {
+    char = '1234567890'.charAt([randomInt(0,10)])
+    randomNumber = randomNumber.concat(char);
+  }
+  console.log(randomNumber);
+  return randomNumber;
+}
+return randomWord() + " " + randomNumber();
+%%
+```
+
+Begets:
+
+```
+4c3ahwn 8893525278
+```
+
+I just know you were waiting to have random junk thrown into your prompts.
+
 ### Dynamic Prompts
 
 Since this extension runs before Dynamic Prompts, any dynamic prompting you create will work as you might hope. If you need it to run *after*... well, leave a note about that and describe your scenario, please.
