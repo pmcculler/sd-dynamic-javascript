@@ -1,8 +1,9 @@
 # sd-dynamic-javascript
 Automatic1111 extension that allows embedding Javascript into prompts.
 
-Javascript
-You can write Javascript now to your heart's content! Examples of how this works at the end.
+## Javascript!
+
+You can write Javascript now to your heart's content! Examples of how this works after a short preamble, or you can scroll straight to them below.
 
 ## Motivation
 
