@@ -41,7 +41,7 @@ It's Javascript, executes as if in a browser. I don't know how crazy you can get
 
 * Dynamic Javascript prompts runs before Dynamic Prompts, so you can create dynamic prompt material with Javascript.
 *  * But you can't include Javascript from a file with Dynamic Prompts, for example, because that Javascript won't get evaluated. LMK if you need that though.
-* Code blocks are demarcated by '%%' at the beginning and end. - if that doesn't work for you let me know.
+* Code blocks are demarcated by '%%' at the beginning and end. - if that doesn't work for you let me know. I can make it configurable.
 * *  e.g. %% console.log(hello world); %%
 * Whatever your Javascript returns is what the code block is replaced with. If you return nothing, the code is evaluated but only empty space replaces the code block in the prompt. If you're disappointed by this let me know.
 * Positive prompts are evaluated first, then negative prompts.
