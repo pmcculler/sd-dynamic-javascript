@@ -29,7 +29,6 @@ class JavascriptRunner:
     def execute_javascript_in_prompt(self, prompt):
         sections = re.split('(%%.*?%%)', prompt, flags=re.DOTALL)
         for i, section in enumerate(sections):
-        
             if section.startswith('%%') and section.endswith('%%'):
                 # This is a JavaScript code section. Execute it.
                 js_code = section[2:-2].strip()  # Remove the delimiters
@@ -75,7 +74,7 @@ class JSPromptScript(scripts.Script):
             prompt = p.all_prompts[i]
             negative_prompt = p.all_negative_prompts[i]
             try:
-                if "%%" in original_prompt:
+                if "%%" in prompt:
                     if self.jr is NULL:
                         self.jr = JavascriptRunner();
                     prompt = self.jr.execute_javascript_in_prompt(prompt) 
@@ -83,13 +82,13 @@ class JSPromptScript(scripts.Script):
                     if self.jr is NULL:
                         self.jr = JavascriptRunner();
                     negative_prompt = self.jr.execute_javascript_in_prompt(negative_prompt)
-                self.jr.resetContext() # End shared context
+                if self.jr is not NULL:
+                    self.jr.resetContext() # End shared context
             except Exception as e:
                 logging.exception(e)
-                prompt = [str(e)]
-                negative_prompt = [str(e)]
+                prompt = str(e)
+                negative_prompt = str(e)
 
             p.all_prompts[i] = prompt
             p.all_negative_prompts[i] = negative_prompt
         p.prompt_for_display = original_prompt
-        p.prompt = original_prompt
