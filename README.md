@@ -13,7 +13,7 @@ You can write Javascript now to your heart's content! Examples of how this works
 
 ## State: Current Problems and TODOs
 * None. Unlike everything else in life, this is problem free.
-* Except... it might be something of a security issue to run arbitrary Javascript inside your prompt. Just saying.
+* Except... it might be something of a security issue to run arbitrary Javascript inside your prompt. Just saying. I mean, there's precautions; the extension uses a headless browser, and those are reasonably well sandboxed. Still.
 * And you do have to install something on the side, see Requirements just below. Hey, they say nothing free is worthwhile.
 
 ## Requirements
