@@ -1,4 +1,3 @@
-from asyncio.windows_events import NULL
 import contextlib
 import gradio as gr
 import logging
@@ -50,7 +49,7 @@ def _get_effective_prompt(prompts: list[str], prompt: str) -> str:
 
 class JSPromptScript(scripts.Script):
     def __init__(self) -> None:
-        self.jr = NULL
+        self.jr = None
         super().__init__()
 
     def title(self):
@@ -75,14 +74,14 @@ class JSPromptScript(scripts.Script):
             negative_prompt = p.all_negative_prompts[i]
             try:
                 if "%%" in prompt:
-                    if self.jr is NULL:
+                    if self.jr is None:
                         self.jr = JavascriptRunner();
                     prompt = self.jr.execute_javascript_in_prompt(prompt) 
                 if "%%" in negative_prompt:
-                    if self.jr is NULL:
+                    if self.jr is None:
                         self.jr = JavascriptRunner();
                     negative_prompt = self.jr.execute_javascript_in_prompt(negative_prompt)
-                if self.jr is not NULL:
+                if self.jr is not None:
                     self.jr.resetContext() # End shared context
             except Exception as e:
                 logging.exception(e)
